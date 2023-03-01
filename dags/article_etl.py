@@ -192,7 +192,7 @@ article_dag = DAG("article_2",
                   default_args=default_args,
                   start_date=datetime.datetime(2023, 2, 28),
                   catchup = False,
-                  schedule="*/5 * * * *")
+                  schedule="30 19 * * *")
 
 extract_task = PythonOperator(
     task_id="extract_data",
